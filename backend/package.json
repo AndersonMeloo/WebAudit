@@ -5,6 +5,7 @@
   "scripts": {
     "build": "nest build",
     "start": "npm run start:dev",
+    "dev:start": "npm run start:dev",
     "start:dev": "kill-port 3000 && nest start --watch",
     "start:prod": "node dist/main"
   },
