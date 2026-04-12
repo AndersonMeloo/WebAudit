@@ -59,6 +59,10 @@ header p {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .search-form input {
@@ -129,7 +133,9 @@ header p {
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .loading p {
