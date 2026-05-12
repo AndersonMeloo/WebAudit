@@ -9,6 +9,7 @@
     "start:dev": "kill-port 3000 && nest start --watch",
     "start:prod": "node dist/main",
     "prisma:generate": "prisma generate",
+    "postinstall": "prisma generate",
     "prisma:migrate:dev": "prisma migrate dev --name init",
     "prisma:migrate:deploy": "prisma migrate deploy"
   },
