@@ -7,7 +7,8 @@ async function bootstrap() {
 
   app.enableCors({
     origin: process.env.FRONTEND_URL || 'http://localhost:3001',
-    methods: ['POST'],
+    methods: ['POST', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'Accept', 'Origin'],
   });
 
   app.useGlobalPipes(
